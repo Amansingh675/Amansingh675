@@ -2,12 +2,15 @@ name: Generate Snake Game
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # Runs every 24 hours
-  workflow_dispatch:       # Allows manual run
+    - cron: "0 0 * * *" # Runs every 24 hours
+  workflow_dispatch: # Allows manual run
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # 👈 REQUIRED to allow pushing to output branch
 
     steps:
       - name: Checkout Repository
@@ -16,10 +19,10 @@ jobs:
       - name: Generate Snake Animation
         uses: Platane/snk@v3
         with:
-          github_user_name: Amansingh675   # <-- your GitHub username
+          github_user_name: Amansingh675  # 👈 Your GitHub username
           outputs: dist/snake.svg
 
-      - name: Push to Output Branch
+      - name: Push Generated Snake to Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
