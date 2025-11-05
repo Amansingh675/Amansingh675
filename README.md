@@ -43,3 +43,8 @@
 
 <br/>
 <hr/>
+
+
+![GitHub Snake Light](https://raw.githubusercontent.com/Amansingh675/output/snake.svg#gh-light-mode-only)
+![GitHub Snake Dark](https://raw.githubusercontent.com/Amansingh675/output/snake.svg#gh-dark-mode-only)
+
