@@ -10,7 +10,7 @@
 
 <div align="center">
  
- 🔭 I’m currently Studing in **Chandigarh University**
+ 🔭 I’m currently Studying in **Chandigarh University**
  
  🌱 I’m currently learning **Python, ML, Web Development, DSA**
 
